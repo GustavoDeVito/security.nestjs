@@ -42,4 +42,9 @@ export class AppController {
       ip: req.ip,
     };
   }
+
+  @Get('helmet')
+  helmet() {
+    return 'View Headers.';
+  }
 }
